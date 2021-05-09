@@ -357,9 +357,12 @@
 
             let month = monthNames[d.getMonth()];
             let day;
+            let dayName;
 
             d.getDate() < 10 ? day = "0" + d.getDate() : day = d.getDate();
-            let dayName = dayNames[d.getDate() - 1]
+
+            d.getDate() > 6 ? dayName = dayNames[(d.getDate() % 7) - 1] : dayName = dayNames[d.getDate() - 1];
+            // let dayName = dayNames[d.getDate() - 1]
 
 
             let fullDate = dayName + ', ' + month + ' ' + day + ', ' + d.getFullYear();
