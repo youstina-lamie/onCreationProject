@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="e-books-container">
+        <div class="e-book row">
+            <div class="col-lg-4" style="background-image: url('./assets/photo-1544947950-fa07a98d237f.jfif'); background-size: cover;"></div>
+            <div class="col-lg-8 row e-book-p-container">
+                <div class="title col-lg-12">BOOK'S TITLE</div>
+                <div class="description col-lg-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti repellendus, impedit numquam repudiandae ea iste eveniet hic error iure, velit perspiciatis reiciendis doloribus necessitatibus molestias totam excepturi rem? Officiis,
+                    ullam?
+                </div>
+                <div class="btn btn-primary col-lg-4 offset-7 download-btn">Download</div>
+            </div>
+        </div>
+        <!-- <div class="e-book row">
+            <div class="col-lg-4" style="background-image: url('./assets/photo-1544947950-fa07a98d237f.jfif'); background-size: cover;"></div>
+            <div class="col-lg-8 row e-book-p-container">
+                <div class="title col-lg-12">BOOK'S TITLE</div>
+                <div class="description col-lg-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti repellendus, impedit numquam repudiandae ea iste eveniet hic error iure, velit perspiciatis reiciendis doloribus necessitatibus molestias totam excepturi rem? Officiis,
+                    ullam?
+                </div>
+                <div class="btn btn-primary col-lg-4 offset-7 download-btn">Download</div>
+            </div>
+        </div> -->
+    </div>
+    <div style="overflow-x:auto; overflow-y: auto; height: 80vh;">
+        <table id="table">
+            <tbody id="bodyOfTable">
+                <tr id="table-header">
+                    <th>Date</th>
+                    <th>Time Left</th>
+                    <th></th>
+                    <th></th>
+                    <th>Event</th>
+                    <th>Impact</th>
+                    <th>Previous</th>
+                    <th>Consensus</th>
+                    <th>Actual</th>
+                    <th>All none <i class="fa fa-exclamation-circle"></i></th>
+                </tr>
+
+                <tr>
+                    <td id="secondROW-Date" colspan="10" style="text-align: center; background-color: #F7F7F7;">
+                        Tuesday, May 03, 2021
+                    </td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span> <span id='time'> 00:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">AUD</td>
+                    <td>AiG Performance of Construction Index</td>
+                    <td style="text-align: center;"><span class="badge badge-warning">MEDIUM</span></td>
+                    <td>61.8</td>
+                    <td></td>
+                    <td>59.1</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 02,</span><span id='time'> 01:00</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 04,</span> <span id='time'>02:00</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-warning">MEDIUM</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 04,</span><span id='time'> 02:00</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>RBNZ's Governor Orr speech</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span> <span id='time'>03:00</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span> <span id='time'>06:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>ECB's Lane speech</td>
+                    <td style="text-align: center;"><span class="badge badge-danger">HiGh</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span><span id='time'> 08:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span> <span id='time'>10:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-danger">HIGH</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span><span id='time'> 11:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span><span id='time'> 13:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-warning">MEDIUM</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span> <span id='time'>17:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span><span id='time'> 18:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span><span id='time'> 19:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span><span id='time'> 19:45</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span> <span id='time'>20:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span><span id='time'> 21:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span> <span id='time'>22:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <span id="date">May 05,</span><span id='time'> 23:30</span></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"><img src="./assets/flag-400.png" alt="" srcset=""></td>
+                    <td style="text-align: center;">NZD</td>
+                    <td>Labour Cost Index (YoY)</td>
+                    <td style="text-align: center;"><span class="badge badge-success">LOW</span></td>
+                    <td>1.5%</td>
+                    <td>1.5%</td>
+                    <td>1.6%</td>
+                    <td></td>
+                </tr>
+
+
+
+
+            </tbody>
+
+
+        </table>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header" onclick="closeOrOpenChat()">
+            <p>Chat Name</p>
+            <p style="cursor: pointer;"><i class="fa fa-times"></i></p>
+        </div>
+        <div class="messages ">
+
+            <div class="container">
+                <img src="./assets/avatar_g.jpg" alt="Avatar ">
+                <div class="name-container">
+                    <p class="person-name">Youstina Lamie</p>
+                    <p class="message-body" onclick="showMessageTime(event)">Hello. How are you today?</p>
+                    <span class="time ">11:00</span>
+                </div>
+            </div>
+            <div class="container">
+                <img src="./assets/bandmember.jpg" alt="Avatar ">
+                <div class="name-container">
+                    <p class="person-name">tina </p>
+                    <p class="message-body" onclick="showMessageTime(event)">Hey! I'm fine. Thanks for asking!</p>
+                    <span class="time ">11:00</span>
+                </div>
+            </div>
+
+            <div class="container ">
+                <div class="name-container ">
+                    <p class="message-body" style="float: right;" onclick="showMessageTime(event)">hello!</p>
+                    <span class="time time-right">11:01</span>
+                </div>
+            </div>
+
+
+            <div class="container ">
+                <img src="./assets/avatar_g.jpg" alt="Avatar ">
+                <div class="name-container">
+                    <p class="person-name">Youstina Lamie</p>
+                    <p class="message-body" onclick="showMessageTime(event)">Sweet! So, what do you wanna do today?</p>
+                    <span class="time ">11:02</span>
+                </div>
+            </div>
+
+            <div class="container ">
+                <img src="./assets/bandmember.jpg" alt="Avatar ">
+                <div class="name-container ">
+                    <p class="person-name ">tina</p>
+                    <p class="message-body " onclick="showMessageTime(event)">Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                    <span class="time ">11:05</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="send-message ">
+            <textarea id="message-body" name=" " id=" " cols="36 " rows="10 " placeholder="Enter Your Message..."></textarea>
+            <p class="send-btn" style="cursor: pointer; "><i class="fa fa-paper-plane "></i></p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let d = new Date();
+            let currentTime = d.getHours() + ':' + d.getMinutes();
+
+            const dayNames = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+            let month = monthNames[d.getMonth()];
+            let day;
+
+            d.getDate() < 10 ? day = "0" + d.getDate() : day = d.getDate();
+            let dayName = dayNames[d.getDate() - 1]
+
+
+            let fullDate = dayName + ', ' + month + ' ' + day + ', ' + d.getFullYear();
+            let subDate = month + ' ' + day + ',';
+            $('#secondROW-Date')[0].textContent = fullDate;
+
+            $('tbody > tr ').each(function(i, elem) {
+                if (i > 1) {
+                    $(elem).children().children('#date')[0].textContent = subDate;
+                    let time = $(elem).children().children('#time').text().split(':');
+
+
+                    // lw elw2t bta3ha 3ada a3ml check
+                    if (d.getHours() > +time[0] || (d.getHours() === +time[0] && d.getMinutes() >= +time[1])) {
+                        $(elem).children()[1].innerHTML = '<i style="color:#28A745" class="fa fa-check"></i>';
+
+
+
+                    } else { //lw lsa m3dash a7sb ba2y 2d a 3alih
+
+
+                        let min = +time[1] - d.getMinutes();
+                        let hour_carry = 0;
+                        if (min < 0) {
+                            min += 60;
+                            hour_carry += 1;
+                        }
+                        let hour = +time[0] - d.getHours() - hour_carry;
+                        hour === 0 ? $(elem).children()[1].innerHTML = `${min}min` : $(elem).children()[1].innerHTML = `${hour}h ${min}min`;;
+                    }
+
+
+
+                }
+            })
+
+
+
+
+
+
+            $('.send-btn').click(function() {
+                let message = $('#message-body').val();
+                let dt = new Date();
+                let time = dt.getHours() + ":" + dt.getMinutes();
+                $('.messages').append(`<div class="container ">
+                    <div class="name-container ">
+                        <p class="message-body" style="float: right;"  onclick="showMessageTime(event)">${message}</p>
+                        <span class="time time-right">${time}</span>
+                    </div>
+                    </div>`)
+                $(".messages").animate({
+                    scrollTop: $(
+                        'html, body').get(0).scrollHeight
+                }, 2000);
+                $('#message-body').val("");
+            })
+
+
+        });
+
+
+        function showMessageTime(e) {
+            $(e.target).closest('.name-container').children('.time').toggleClass('show');
+        }
+
+        function closeOrOpenChat() {
+            if ($('.messages').hasClass('display-none')) {
+                $('.messages').removeClass('display-none');
+                $('.send-message').removeClass('display-none');
+                $('.chat-container').css('height', '30rem');
+
+
+
+            } else {
+                $('.messages').addClass('display-none');
+                $('.send-message').addClass('display-none');
+                $('.chat-container').css('height', '3rem');
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

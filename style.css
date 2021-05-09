@@ -1,0 +1,183 @@
+body {
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+}
+
+tr:not(:first-child):hover {
+    background-color: rgba(37, 71, 106, .2);
+}
+
+th {
+    text-align: center !important;
+    border-bottom: 1px solid rgba(128, 128, 128, .3);
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+td {
+    text-align: left;
+    padding: 8px 15px;
+}
+
+td {
+    border-bottom: 1px solid rgba(128, 128, 128, .3);
+}
+
+.badge {
+    color: white !important;
+    width: 4rem !important;
+}
+
+.chat-container {
+    width: 20rem;
+    height: 30rem;
+    position: fixed;
+    bottom: 0rem;
+    right: 2rem;
+    background-color: #f1f1f1;
+    z-index: 1;
+}
+
+.chat-header {
+    background-color: rgb(146, 143, 143);
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem 1rem;
+    font-weight: bold;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.messages {
+    height: 22rem;
+    overflow-y: scroll;
+}
+
+.container {
+    padding: 10px;
+}
+
+.person-name {
+    width: 15.7rem;
+    font-weight: 200;
+    color: rgb(110, 108, 108);
+    margin-top: 0;
+    margin-bottom: .2rem;
+    cursor: pointer;
+}
+
+.name-container {
+    margin-left: 35px;
+}
+
+.message-body {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: .3rem .5rem;
+    margin-top: 0;
+    width: fit-content;
+    margin-bottom: .2rem;
+    cursor: pointer;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 30px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.time {
+    color: #aaa;
+    margin-left: 10px;
+    display: none;
+    transition: all 2s linear;
+}
+
+.time-right {
+    color: #aaa;
+    margin-left: 210px;
+}
+
+.show {
+    display: block;
+}
+
+.send-message {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+    height: 4rem;
+    cursor: pointer;
+    outline: none;
+    padding: .3rem;
+    border: none;
+}
+
+.e-books-container {
+    border: 1px solid rgba(128, 128, 128, .3);
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.e-book {
+    border: 1px solid rgba(128, 128, 128, .3);
+    width: 35rem;
+    height: fit-content;
+}
+
+.e-book-p-container {
+    padding: .5rem !important;
+}
+
+.download-btn {
+    line-height: 2.5rem !important;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.col-lg-4,
+.col-lg-12 {
+    padding: 0 !important;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
